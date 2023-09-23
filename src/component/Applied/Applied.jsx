@@ -2,8 +2,9 @@
 
 const Applied = () => {
     return (
-        <div>
+        <div className="text-center">
             <h3>This is applyed</h3>
+            <p>Hello world prithivi</p>
         </div>
     );
 };
