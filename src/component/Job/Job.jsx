@@ -1,8 +1,9 @@
 import { CiLocationOn, CiDollar } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 
 const Job = ({ job }) => {
     console.log(job)
-    const { logo, job_title,company_name, remote_or_onsite,location,job_type,salary} = job;
+    const { id,logo, job_title,company_name, remote_or_onsite,location,job_type,salary} = job;
 
     return (
         <div>
@@ -20,7 +21,7 @@ const Job = ({ job }) => {
                         <p className="font-bold opacity-70 flex gap-3"><CiDollar className='h-4 w-4'></CiDollar>{salary}</p>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-gradient-to-r text-white from-[#7E90FE] to-[#9873FF]">View All</button>
+                        <Link to={`/job/${id}`}><button className="btn bg-gradient-to-r text-white from-[#7E90FE] to-[#9873FF]">View All</button></Link>
                     </div>
                 </div>
             </div>

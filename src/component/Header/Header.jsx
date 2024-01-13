@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { CiLocationOn } from 'react-icons/ci';
 
 const Header = () => {
     const link = <>
